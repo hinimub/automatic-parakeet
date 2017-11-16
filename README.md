@@ -34,7 +34,7 @@
 [ HTTP REFERER ] https://example.com
 ```
 
-下書き-template
+下書き-template-リッチテキストモード
 ```
 %guestname%様
 
@@ -48,7 +48,7 @@
 ホテル パピヨン ●●
 ```
 
-下書き-json
+下書き-json-プレーンテキストモード
 ```
 {
   "%guestname%": "hash['[ 氏名 ]']",
