@@ -1,6 +1,6 @@
 # automatic-parakeet
 
-##予約メール
+予約メール
 ```
 2000-01-01 00:00:00
 ご予約フォームより以下のメールを受付けました。
@@ -32,4 +32,18 @@
 [ IP ADDRESS ] 127.0.0.1
 [ USER AGENT ] Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
 [ HTTP REFERER ] https://example.com
+```
+
+下書き-template
+```
+%guestname%様
+
+ホテル パピヨン ●●と申します。
+このたびはご予約まことにありがとうございます。
+
+チェックイン予定日　　　%checkindate%
+チェックアウト予定日　　%checkoutdate%
+
+%guestname%様のお越しをお待ち申し上げます。
+ホテル パピヨン ●●
 ```
