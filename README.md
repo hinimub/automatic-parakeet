@@ -47,3 +47,12 @@
 %guestname%様のお越しをお待ち申し上げます。
 ホテル パピヨン ●●
 ```
+
+下書き-json
+```
+{
+  "%guestname%": "hash['[ 氏名 ]']",
+  "%checkindate%": "var checkInDate=new Date(hash['[ チェックイン予定日 ]']);checkInDate.getFullYear()+'年'+(checkInDate.getMonth()+1)+'月'+checkInDate.getDate()+'日'",
+  "%checkoutdate%": "var checkOutDate=new Date(hash['[ チェックアウト予定日 ]']);checkOutDate.getFullYear()+'年'+(checkOutDate.getMonth()+1)+'月'+checkOutDate.getDate()+'日'"
+}
+```
