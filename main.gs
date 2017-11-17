@@ -1,10 +1,10 @@
-﻿function mailformproToHash (message) {
+function mailformproToHash (message) {
   var arr = message.split(/\r\n|\n/);
   var hash = {};
   for (var i in arr) {
       var str = arr[i];
       var key = str.slice(str.indexOf('['), str.indexOf(']') + 1);
-      if (!!key) hash[key] = str.slice(str.indexOf(']') + 1).trim();
+      if (key) hash[key] = str.slice(str.indexOf(']') + 1).trim();
   }
   return hash;
 }
