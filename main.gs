@@ -10,7 +10,7 @@ function mailformproToHash (message) {
 }
 
 function isValidBook (hash) {
-  if (typeof hash['[ チェックイン予定日 ]'] === "undefined") return false;
+  if (!(['[ チェックイン予定日 ]'] in hash)) return false;
   return true;
 }
 
